@@ -1,0 +1,117 @@
+<html>
+    <head>
+
+    <meta charset="utf-8">
+    <title>NOLEGGIO AUTO</title>
+    <link rel="stylesheet" href="mhw3.css">
+    <link rel="stylesheet" href="noleggio.css">
+    <script src="noleggio.js" defer="true"></script>
+    <script src="meteo.js" defer="true"></script>
+    <meta name="viewport" content="width=device-width,     initial-scale=1">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+    <header>
+      <nav>
+        
+        <div id="Logo">
+          <strong>Le Car</strong>
+        </div>
+
+        <div id="link">
+          
+          <a href="mhw3.html">Home Page</a>
+          <a href="noleggio.html">Noleggio</a>
+          <a>Usato</a>
+          <a href="login.php">Accedi</a>
+        </div>
+
+        <div id="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+
+          </div>
+
+      </nav>
+
+    </header>
+
+    
+
+      <div id="sezione1">
+        <h1>Noleggio: Scegli la tipologia auto che più fa per te</h1>
+      </div> 
+
+      <section id="noleggio1">
+
+      <form  class="form_noleggio" name="noleggio_form" method="get">
+        <div class="top">
+            <label>MARCA:</label>
+            <input type="text" name="marca" class="testo" placeholder="Marca Auto" /><br>
+        </div>
+        <div class="top">
+            <label>VEICOLO:</label>
+            <input type="radio" name="veicolo" value="auto" checked><em>AUTO</em>
+            
+           <!-- nel caso di aggiornamento noleggio veicoli anche su mezzi pesanti e moto -->
+            <!--<input type="radio" name="veicolo" value="camion"><em>CAMION</em>
+            <input type="radio" name="veicolo" value="moto"><em>MOTO</em><br>-->
+        </div>
+        <div class="top">
+          <label>VOLUME:</label>
+          <input type="radio" name="volume" value="berlina"> <em>BERLINA</em>
+          <input type="radio" name="volume" value="crossOver"><em>CROSS-OVER</em>
+          <input type="radio" name="volume" value="suv"><em>SUV</em>
+          <input type="radio" name="volume" value="stat-wag"><em>STATION-WAGON</em>
+        </div>
+        <div class="top">
+          <label>ANNO:</label>
+          <input type="radio" name="anno" value="2018" checked><em>2018</em>
+          <input type="radio" name="anno" value="2019"><em>2019</em>
+          <input type="radio" name="anno" value="2020"><em>2020</em>
+          <input type="radio" name="anno" value="2021"><em>2021</em>
+          <input type="radio" name="anno" value="2022"><em>2022</em><br>
+      </div>
+        <input type="submit" class="button" name="submit" value="Invia" />
+      </form>
+    
+
+      <section id="proprietario">
+
+      <section>
+
+      </section>
+
+      <section class="API_METEO">
+
+
+        <div class="Meteo">
+            <h1>Meteo</h1>
+            <p>Dai un'occhiata alle previsioni prima di recarti in sede!!<br/><br/> Inserisci qui il nome della tua città</p>
+            <form>
+                <input type="text" id="input">
+                <input type="submit" id="submit" value="Cerca">
+            </form>
+  
+            <div class="result"></div>
+  
+        </div>
+    </section>
+
+
+    </body>
+
+    
+
+
+</html>

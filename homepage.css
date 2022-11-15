@@ -1,0 +1,296 @@
+
+body{
+    margin: 0px;
+    background: url("car.jpg");
+   background-position: center;
+}
+
+
+header{
+    background-color:black;
+    width: 100%;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    font-weight: normal;;
+    font-size: 4em;
+    color:white;
+    font-family: 'Great Vibes', helvetica;
+    text-align: center;
+    margin: auto;
+}
+
+
+nav a{
+    text-decoration: none;
+    cursor: pointer;
+    border: solid 5px whitesmoke;
+    color: whitesmoke;
+    border-radius: 25px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+nav a:hover{
+    background-color: orange;
+    color: black;
+    border: solid 5px gold;
+    
+}
+
+
+article{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.flex_container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 2%;
+    
+}
+
+
+
+.flex_left{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    width: 30%;
+    
+
+}
+
+.flex_left .bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1%;
+    margin-bottom: 25px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    line-height: 4em;
+}
+
+
+.flex_left .bottom p{
+    font-size: 2em;
+}
+
+.flex_left .bottom form{
+ 
+    align-items: center;
+    height: 30%;
+}
+.flex_left .bottom input{
+    border-radius: 25px;
+    background-color: gold;
+
+}
+
+.flex_left .bottom input:focus{
+    background-color: orange;
+}
+
+.flex_left .bottom #tasto{
+    background-color: black;
+    color: whitesmoke;
+
+}
+
+.flex_left .bottom #tasto:hover{
+    background-color: orange;
+    color: black;
+}
+
+.flex_left .sub-bottom{
+    background-color: whitesmoke;
+    border-radius: 25px;
+    margin: 2%;
+    
+}
+
+.flex_left .sub-bottom img{
+    border: 3px solid orange;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.flex_left .sub-bottom div{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.flex_center{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    
+    margin:1%;
+    width: 54%;
+}
+
+.flex_center .creazione{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2%;
+    width: 100%;
+    border-radius: 25px;
+    background-color: whitesmoke;
+}
+
+.flex_center .creazione form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+}
+
+.flex_center .creazione  form textarea{
+    resize: none;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 1%;
+    background-color:gold;
+}
+
+.flex_center .creazione  form textarea:focus{
+    background-color: orange;
+}
+
+.flex_center .creazione form div{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.flex_center .creazione form div .left{
+    width: 70%;
+    border-radius: 10px;
+    background-color: gold;
+}
+
+.flex_center .creazione form div .left:focus{
+    background-color: orange;
+}
+
+
+.flex_center .creazione form div .right{
+    width: 30%;
+    border-radius: 10px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.flex_center .creazione form div .right:focus{
+    background-color: orange;
+}
+
+.flex_center .creazione form div .right:hover{
+    background-color: orange;
+    color: black;
+
+}
+
+
+/* Media Query */
+
+@media (max-width: 1500px)
+{
+    
+    body{
+        font-size: 0.8em;
+    }
+
+ .bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 15%;
+    }
+
+     .bottom form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .flex_left .sub-bottom img{
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+
+
+@media (max-width: 1200px)
+{
+    .flex_left .bottom p{
+        font-size: 1.2em;
+    }
+}
+
+
+@media (max-width: 1000px)
+{
+    .flex_container{
+        flex-direction: column;
+    }
+
+    .flex_left{
+        width: 100%;    
+    }
+    
+    .flex_left .bottom{
+        width: 100%;
+        height: auto;
+    }
+
+    .flex_left .bottom .sub-bottom{
+        width: 100%;
+        height: auto;
+    }
+
+    .flex_left .sub-bottom img{
+        width: 100px;
+        height: 100px;
+    }
+    
+}
+
+
+
+@media (max-width: 700px)
+{
+    nav h1{
+        font-size: 2em;
+    }
+   
+}

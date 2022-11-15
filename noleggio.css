@@ -1,0 +1,84 @@
+.form_noleggio{
+    margin:75px 50px 50px 50px;
+    margin-top:75px;
+    }
+
+.button {
+        width:125px;
+        height:35px;
+        text-shadow:2px 2px 5px rgba(212,212,212,1);
+        color:#fff;
+        font-size:20px;
+        border-radius:10px;
+        border:1px solid #fff;
+        margin-top: 20px;
+        background: #fc8600;
+        box-shadow: 2px 2px 5px #000;
+        cursor:pointer;}
+
+ .testo {
+            height:30px;
+            width:350px;
+            margin-bottom:2px;
+            background: #FFFFFF;
+            padding:5px;}
+
+.top label{
+    font-size:30px;
+    text-transform:uppercase;
+    font-family: 'Frank Ruhl Libre',sans-serif;
+}
+
+#noleggio1{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+#proprietario h1{
+    text-transform:uppercase;
+    font-family: 'Frank Ruhl Libre',sans-serif;
+    color: red;
+}
+
+
+.API_METEO div input{
+    cursor: pointer;
+  }
+
+
+.API_METEO div h1{
+  font-size: 1.2em;
+}
+
+.API_METEO .result{
+    border: none;
+}
+
+.API_METEO p{
+    padding: 10px;
+}
+
+.titolo_ris, .contento_ris{
+  border: solid 2px black;
+  background-color: beige;
+  color: red;
+  text-align: center;
+  padding: 10px;
+  width:100%;
+}
+
+.API_METEO div{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+  border: solid 2px black;
+  background-color:aquamarine;
+}
+.Meteo p{
+  text-decoration: underline;
+  font-size: 1.1em;
+  font-family: 'Abel', sans-serif;
+}
